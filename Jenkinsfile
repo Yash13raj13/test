@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Install') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'npm test || echo "No tests defined"'
+                bat 'npm test || echo No tests defined'
             }
         }
 
